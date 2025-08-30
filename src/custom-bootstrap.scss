@@ -1,0 +1,6 @@
+
+// 1️⃣ Override Bootstrap variables BEFORE importing Bootstrap
+$white: #fff; // your new "white" color
+
+// 2️⃣ Import Bootstrap SCSS
+@import "../node_modules/bootstrap/scss/bootstrap";
