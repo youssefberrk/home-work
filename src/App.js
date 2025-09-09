@@ -17,7 +17,7 @@ function App() {
 				<Card style={{ width: "44rem" }} className="shadow-lg">
 					<Image />
 
-					<Card.Body className="m-22">
+					<Card.Body className="m-22 h4">
 						<Name />
 						<Price />
 						<Description />
@@ -37,13 +37,20 @@ function App() {
 						repeat: Infinity,
 						ease: "easeInOut",
 					}}
-					style={{ fontSize: "44px" }}>
-					Hello, {myName}
+					style={{ fontSize: "44px", fontFamily: "fantasy" }}>
+					{myName ? (
+						<>
+							{`Hello ${myName}!`}
+							<br />{" "}
+							<img
+								src="https://i.pinimg.com/originals/67/d0/13/67d0137c6517d5ed0fcc461f2582dcfd.gif"
+								width="200px"
+							/>
+						</>
+					) : (
+						"Hello There!"
+					)}
 				</Card.Text>
-				<img
-					src="https://i.pinimg.com/originals/67/d0/13/67d0137c6517d5ed0fcc461f2582dcfd.gif"
-					width="200px"
-				/>
 			</div>
 		</>
 	);
